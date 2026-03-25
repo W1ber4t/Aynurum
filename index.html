@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aynur Guvanjova</title>
+    <style>
+        body {
+            /* Bebek mavisi ve koyu gece mavisi geçişi */
+            background: radial-gradient(circle, #89cff0 0%, #001a33 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Parlayan arka plan efektleri */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(white 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .photo-frame {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* İstediğin kırmızı çerçeve */
+            border: 5px solid #ff4d4d;
+            /* Parlama efekti: Kırmızı ve Bebek Mavisi karışımı */
+            box-shadow: 0 0 20px #ff4d4d, 0 0 40px rgba(137, 207, 240, 0.5);
+            object-fit: cover;
+            margin-bottom: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .heart {
+            color: #ff4d4d;
+            font-size: 28px;
+            margin-top: -15px;
+            text-shadow: 0 0 10px #ff4d4d;
+            position: relative;
+        }
+
+        h2 {
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin: 20px 0 5px 0;
+            text-shadow: 0 0 10px #89cff0;
+        }
+
+        p {
+            font-style: italic;
+            font-size: 0.9rem;
+            opacity: 0.85;
+            margin: 5px 0;
+            color: #f0f8ff;
+        }
+
+        .signature {
+            margin-top: 50px;
+            font-size: 11px;
+            letter-spacing: 6px;
+            opacity: 0.4;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Alt kısımdaki çiçekler */
+        .flowers {
+            position: fixed;
+            bottom: 30px;
+            font-size: 22px;
+            letter-spacing: 15px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="IMG_20260325_222645.jpg" class="photo-frame" alt="Aynur">
+
+        
+        <div class="heart">❤</div>
+
+        <h2>Aynur Guvanjova</h2>
+        
+        <p>denemekten zarar gelmez..</p>
+        <p>aşk tesadüfleri sever</p>
+
+        <div class="signature">W1</div>
+    </div>
+
+    <div class="flowers">
+        🌸 🌷 ✨ ❄️ 🌷 🌸
+    </div>
+
+</body>
+</html>
